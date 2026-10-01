@@ -98,8 +98,8 @@ fi
 
 read -r -p "Quiz type (e.g. exam): " quiz
 read -r -p "Quiz ID (e.g. 1): " quiz_id
-if [[ ! "$quiz" =~ ^[[:alpha:]]+$ ]]; then
-  echo "Quiz type must contain only letters (for example, exam)." >&2
+if [[ ! "$quiz" =~ ^[[:alnum:]]+$ ]]; then
+  echo "Quiz type must contain only letters and numbers (for example, exam1)." >&2
   exit 2
 fi
 if [[ ! "$quiz_id" =~ ^[[:alnum:]]+$ ]]; then
