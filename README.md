@@ -22,6 +22,7 @@
 หาก macOS ขอสิทธิ์เข้าถึง ให้เปิด **System Settings → Privacy & Security → Screen & System Audio Recording** แล้วอนุญาตให้ Terminal บันทึกหน้าจอหรือใช้อุปกรณ์ที่เลือก ชื่อเมนูอาจต่างกันตามเวอร์ชัน macOS
 
 ## บันทึกวิดีโอ
+<img width="770" height="346" alt="image" src="https://github.com/user-attachments/assets/77674ef5-dd9f-430b-95a3-5608fc1e194c" />
 
 เรียกสคริปต์จาก Terminal:
 
