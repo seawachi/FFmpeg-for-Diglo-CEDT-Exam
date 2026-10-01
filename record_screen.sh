@@ -123,7 +123,7 @@ trap 'exit 130' INT
 trap 'exit 143' TERM
 
 printf '\n+------------------------------------------------------------+\n'
-printf '|                    RECORDING IN PROGRESS                 |\n'
+printf '|                    RECORDING IN WILL START AS             |\n'
 printf '+------------------------------------------------------------+\n'
 printf '| Camera: %s\n' "$device_index"
 printf '| Saving to: %s\n' "$output"
@@ -131,6 +131,11 @@ printf '+------------------------------------------------------------+\n'
 printf '| To stop and save: press q in this Terminal window.       |\n'
 printf '| Keep this window open until FFmpeg finishes saving.      |\n'
 printf '+------------------------------------------------------------+\n\n'
+
+printf '+============================================================+\n'
+printf '|             PRESS ENTER TO START RECORDING                 |\n'
+printf '+============================================================+\n'
+read -r -p 'Press Enter when you are ready... ' _
 
 if ffmpeg -f avfoundation -pixel_format uyvy422 -probesize 40M -i "$device_index" \
   -r 2 -vcodec libx264 -b:v 256k -threads 1 "$output"; then
