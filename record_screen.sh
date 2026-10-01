@@ -123,7 +123,7 @@ trap 'exit 130' INT
 trap 'exit 143' TERM
 
 printf '\n+------------------------------------------------------------+\n'
-printf '|                    RECORDING IN WILL START AS             |\n'
+printf '|                    RECORDING CURRENT CONFIG               |\n'
 printf '+------------------------------------------------------------+\n'
 printf '| Camera: %s\n' "$device_index"
 printf '| Saving to: %s\n' "$output"
